@@ -1,2 +1,1 @@
-# voter-learner
-easy
+voting process is easy to understand
