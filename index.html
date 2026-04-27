@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicGuide - Your Election Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-vote-yea"></i>
+                <span>CivicGuide</span>
+            </div>
+            
+            <div class="nav-section">
+                <h3>Quick Topics</h3>
+                <ul class="nav-list" id="quick-topics">
+                    <li class="nav-item" data-topic="registration">
+                        <i class="fas fa-id-card"></i> Voter Registration
+                    </li>
+                    <li class="nav-item" data-topic="timeline">
+                        <i class="fas fa-calendar-alt"></i> Election Timeline
+                    </li>
+                    <li class="nav-item" data-topic="process">
+                        <i class="fas fa-person-booth"></i> Voting Process
+                    </li>
+                    <li class="nav-item" data-topic="documents">
+                        <i class="fas fa-file-alt"></i> Required Documents
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="info-card">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Get ready for the upcoming elections. Your vote matters!</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+            <header class="chat-header">
+                <div class="assistant-info">
+                    <div class="avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="assistant-details">
+                        <h2>Election Assistant</h2>
+                        <span class="status"><span class="status-dot"></span> Online</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be injected here by JS -->
+            </div>
+
+            <div class="chat-input-container">
+                <div class="quick-replies" id="quick-replies">
+                    <!-- Quick reply buttons will be injected here -->
+                </div>
+                <form id="chat-form" class="chat-form">
+                    <input type="text" id="user-input" placeholder="Ask me about the election process..." autocomplete="off">
+                    <button type="submit" id="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
